@@ -1,0 +1,6 @@
+langchain-groq
+langchain-community 
+langchain-core
+gradio
+nest_asyncio
+pyngrok
