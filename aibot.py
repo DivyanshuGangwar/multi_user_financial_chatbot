@@ -2,6 +2,7 @@ import os
 import base64
 from langchain_groq.chat_models import ChatGroq
 from langchain_core.messages import HumanMessage, SystemMessage, AIMessage
+from data_loader import DOC_PATHS 
 
 class Aibot:
   "class for utilising llm and prompt creation modules"
@@ -29,8 +30,6 @@ class Aibot:
     """
 
     global DOC_PATHS
-
-    print(DOC_PATHS)
     
     chat_history = [SystemMessage(content="You are a helpful financial assistant.")]
 
