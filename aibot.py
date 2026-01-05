@@ -27,6 +27,11 @@ class Aibot:
     ----------
     list -> initiated history list of the session chat
     """
+
+    global DOC_PATHS
+
+    print(DOC_PATHS)
+    
     chat_history = [SystemMessage(content="You are a helpful financial assistant.")]
 
 
@@ -87,6 +92,6 @@ class Aibot:
 
     #based on user input convert the file into base64
     with open(file_path, "rb") as image_file:
-    encoded_str = base64.b64encode(image_file.read()).decode('utf-8')
+      encoded_str = base64.b64encode(image_file.read()).decode('utf-8')
 
     return encoded_str
