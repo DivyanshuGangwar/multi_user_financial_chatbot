@@ -15,6 +15,7 @@ multi_user_financial_chatbot/
 │
 ├── aibot.py                # Core class for LLM utilization and prompt creation
 ├── session_manager.py      # Class for handling multiple user sessions securely
+├── data_loader.py          # File to store and create functions for loading data/file paths
 ├── /data/                  # Folder containing mock company financial documents
 └── main.ipynb              # Colab notebook to execute and demonstrate the chatbot
 ```
